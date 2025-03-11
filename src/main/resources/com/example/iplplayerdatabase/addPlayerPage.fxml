@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iplplayerdatabase.addPlayerController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane fx:id="pane11" prefHeight="400.0" prefWidth="220.0" style="-fx-background-color: #F5FF9F;">
+               <children>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="135.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../cricket-player.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="70.0" fitWidth="81.0" layoutX="123.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../plus.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="49.0" layoutY="293.0" text="ADD">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="89.0" layoutY="328.0" text="PLAYER">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="26.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backButton" layoutX="8.0" layoutY="7.0" mnemonicParsing="false" onAction="#backToMainMenu" prefHeight="44.0" prefWidth="70.0" style="-fx-background-color: RED;" text="BACK" textFill="#0d0000">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane12" layoutX="220.0" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: #3B3C36;">
+               <children>
+                  <TextField fx:id="playerName" layoutX="28.0" layoutY="53.0" prefHeight="44.0" prefWidth="325.0" promptText="Player Name">
+                     <font>
+                        <Font name="Comic Sans MS" size="17.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="chPlayer" layoutX="118.0" layoutY="140.0" mnemonicParsing="false" onAction="#checkPlayer" style="-fx-background-color: #FFCC00;" text="CHECK PLAYER">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="returnMessage" layoutX="28.0" layoutY="220.0" prefHeight="44.0" prefWidth="325.0" style="-fx-background-color: #87CEFA;">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="17.0" />
+                     </font></TextField>
+                  <Button fx:id="nextPage" disable="true" layoutX="126.0" layoutY="296.0" mnemonicParsing="false" onAction="#goToNextPage" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #FFCC00;" text="NEXT STEP">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="pane22" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #F4A460;" visible="false">
+               <children>
+                  <TextField fx:id="playerCountry" layoutX="251.0" layoutY="8.0" prefHeight="40.0" prefWidth="325.0" promptText="Country">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerAge" layoutX="251.0" layoutY="55.0" prefHeight="40.0" prefWidth="325.0" promptText="Age">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerHeight" layoutX="251.0" layoutY="103.0" prefHeight="40.0" prefWidth="325.0" promptText="Height">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerClub" layoutX="251.0" layoutY="154.0" prefHeight="40.0" prefWidth="325.0" promptText="Club">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerPosition" layoutX="251.0" layoutY="200.0" prefHeight="40.0" prefWidth="325.0" promptText="Position">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerJurseyNumber" layoutX="251.0" layoutY="248.0" prefHeight="40.0" prefWidth="325.0" promptText="Jarsey Number">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="playerSalary" layoutX="251.0" layoutY="294.0" prefHeight="40.0" prefWidth="325.0" promptText="Salary">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="saveData" layoutX="354.0" layoutY="346.0" mnemonicParsing="false" onAction="#saveToFile" prefHeight="40.0" prefWidth="144.0" style="-fx-background-color: #FFCC00;" text="SAVE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <ImageView fitHeight="168.0" fitWidth="198.0" layoutX="33.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../laptop.gif" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="41.0" layoutY="298.0" text="ADD">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="318.0" text="OTHER">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="14.0" layoutY="350.0" text="INFORMATION">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="22.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="backPrevious" layoutX="7.0" layoutY="10.0" mnemonicParsing="false" onAction="#backToPreviousPage" style="-fx-background-color: RED;" text="BACK">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="Name" layoutX="7.0" layoutY="69.0" prefHeight="40.0" prefWidth="220.0" style="-fx-background-color: #FFEFD5;">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="12.0" />
+                     </font></TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iplplayerdatabase.searchByPlayerName">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutY="1.0" prefHeight="400.0" prefWidth="220.0" style="-fx-background-color: #708090;">
+               <children>
+                  <Label layoutX="2.0" layoutY="298.0" text="Search BY Player Name">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="24.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../cricHelmetPlayer.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="150.0" fitWidth="161.0" layoutX="61.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../search.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Back" layoutX="4.0" layoutY="9.0" mnemonicParsing="false" onAction="#backToPlayerSearch" prefHeight="36.0" prefWidth="64.0" style="-fx-background-color: #FF0000;" text="BACK" textFill="#120101">
+                     <font>
+                        <Font name="Tahoma" size="12.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sAgain" layoutX="13.0" layoutY="344.0" mnemonicParsing="false" onAction="#searchPlayerAgain" style="-fx-background-color: #FFCC00;" text="Search Another Player">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="220.0" layoutY="1.0" prefHeight="400.0" prefWidth="380.0" style="-fx-background-color: #B0E0E6;">
+               <children>
+                  <TextField fx:id="nameTextField" layoutX="14.0" layoutY="14.0" onAction="#handleSubmittedData" prefHeight="40.0" prefWidth="250.0" promptText="Player Name">
+                     <font>
+                        <Font name="Comic Sans MS Bold" size="12.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="searchPlayers" layoutX="276.0" layoutY="9.0" mnemonicParsing="false" onAction="#searchPlayerByNameIn" prefHeight="50.0" prefWidth="100.0" style="-fx-background-color: #2F4F4F;" text="Search" textFill="#ba0f2e">
+                     <font>
+                        <Font name="Constantia Bold" size="18.0" />
+                     </font>
+                  </Button>
+                  <Text layoutX="21.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name       :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="nameText" layoutX="109.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Country    :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="countryName" layoutX="109.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Age          :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerAge" layoutX="115.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Height(meter) :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerHeight" layoutX="160.0" layoutY="276.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0" AnchorPane.leftAnchor="160.0" AnchorPane.topAnchor="262.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Club   :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position    :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Jursey Number :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text layoutX="21.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Weekly Salary (Rs) :">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerHeight" layoutX="149.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerClub" layoutX="100.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="270.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerPosition" layoutX="115.0" layoutY="345.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerJursey" layoutX="160.0" layoutY="370.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="200.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="playerSalary" layoutX="176.0" layoutY="395.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="150.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+                  <Label layoutX="61.0" layoutY="155.0" text="Details of The Player">
+                     <font>
+                        <Font name="Comic Sans MS" size="24.0" />
+                     </font>
+                  </Label>
+                  <Text fill="#8604b2" layoutX="58.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" Player Found :">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="yesNO" fill="#e60d0d" layoutX="198.0" layoutY="129.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="100.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

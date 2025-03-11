@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.iplplayerdatabase.searchingController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <AnchorPane prefHeight="400.0" prefWidth="200.0" style="-fx-background-color: #7FFFD4;">
+               <children>
+                  <Label layoutX="28.0" layoutY="281.0" text="Welcome" textFill="#ce02f5">
+                     <font>
+                        <Font name="Tahoma Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="28.0" layoutY="327.0" text="MAIN MENU" textFill="#bc23ad">
+                     <font>
+                        <Font name="Tahoma Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="75.0" layoutY="304.0" prefHeight="30.0" prefWidth="42.0" text="TO" textFill="#200707">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="140.0" fitWidth="130.0" layoutX="-7.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../stadium.gif" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="124.0" fitWidth="97.0" layoutX="9.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../player.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="78.0" fitWidth="82.0" layoutX="96.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../cricket.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="200.0" prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: #90EE90;">
+               <children>
+                  <ImageView fitHeight="281.0" fitWidth="407.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../rb_15811.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="SPlayer" layoutX="117.0" layoutY="25.0" mnemonicParsing="false" onAction="#searchPlayer" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #36454F;" text="Search Players" textFill="#04b3fd">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="sClub" layoutX="117.0" layoutY="90.0" mnemonicParsing="false" onAction="#searchClub" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #36454F;" text="Search Club" textFill="#d2b7d7">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="aPlayer" layoutX="117.0" layoutY="150.0" mnemonicParsing="false" onAction="#addPlayer" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: #36454F;" text="Add Player" textFill="#04afff">
+                     <font>
+                        <Font name="Tahoma" size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="ext" layoutX="117.0" layoutY="213.0" mnemonicParsing="false" onAction="#close" prefHeight="50.0" prefWidth="270.0" style="-fx-background-color: BLACk;" text="EXIT" textFill="#dd0b0b">
+                     <font>
+                        <Font name="Tahoma Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
