@@ -41,4 +41,11 @@ A **JavaFX-based desktop application** to manage cricket player records with an 
 
 
 ```bash
-# Example usage screen
+# To compile :
+javac --module-path ~/javafx-sdk-21/lib --add-modules javafx.controls -d out src/Runnable_file_or_class
+# To run :
+java --module-path ~/javafx-sdk-21/lib --add-modules javafx.controls -cp out Runnable_file_or_class
+# For Git Bash on Windows:
+java --module-path "C:/path/to/javafx-sdk-21/lib" --add-modules javafx.controls -cp out Main
+
+
