@@ -23,7 +23,7 @@ A **JavaFX-based desktop application** to manage cricket player records with an 
 
 ---
 
-## 📷 Screenshots
+## 📷 Screenshots (Player Management System)
 
 ![Page1](https://github.com/user-attachments/assets/ddaf0947-b5ae-450a-896d-df73d4831337)
 ![SearchPlayers](https://github.com/user-attachments/assets/e09bff20-eff8-404e-851f-cc14c18c6686)
