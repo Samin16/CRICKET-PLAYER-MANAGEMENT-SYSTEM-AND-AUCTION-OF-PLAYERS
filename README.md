@@ -39,6 +39,11 @@ A **JavaFX-based desktop application** to manage cricket player records with an 
 ![Page2(SampleAuction)](https://github.com/user-attachments/assets/0c564df3-38d9-4ba6-b812-63e4670f649d)
 ![Page2(SellPageAuctionSystem)](https://github.com/user-attachments/assets/5411ccce-a19d-48bf-baf6-3e49aa7ba1b9)
 
+## Branches 
+- main (About project)
+- Maintenance and Server Part (Player management for Tournament(IPL))
+- Client Part (Auction system for the tournament) 
+
 
 ```bash
 # To compile :
